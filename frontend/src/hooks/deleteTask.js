@@ -9,7 +9,7 @@ const useDeleteTask = () => {
     setDeleteError(null);
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/api/delete-task", {
+      const res = await fetch("https://insightboard-m67w.onrender.com/api/delete-task", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

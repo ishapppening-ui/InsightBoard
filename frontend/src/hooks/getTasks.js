@@ -10,7 +10,7 @@ const useGetTasks = () => {
     setError(null);
 
     try {
-      const req = await fetch("http://127.0.0.1:8000/api/get-tasks");
+      const req = await fetch("https://insightboard-m67w.onrender.com/api/get-tasks");
       
       if (!req.ok) {
         throw new Error(`HTTP error! status: ${req.status}`);

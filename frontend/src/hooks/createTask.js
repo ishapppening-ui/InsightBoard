@@ -10,7 +10,7 @@ const useCreateTask = () => {
     setCreateError(null);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/create-task", {
+      const response = await fetch("https://insightboard-m67w.onrender.com/api/create-task", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
